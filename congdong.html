@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cộng Đồng - TheVoidMC</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Tùy chỉnh nút bấm cộng đồng */
+        .social-container {
+            margin-top: 30px;
+        }
+
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .social-button:hover {
+            transform: scale(1.02);
+            filter: brightness(1.2);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+        }
+
+        /* Màu sắc đặc trưng */
+        .discord {
+            background: linear-gradient(135deg, #5865F2 0%, #4752C4 100%);
+            border-bottom: 5px solid #353faf;
+        }
+
+        .zalo {
+            background: linear-gradient(135deg, #0068ff 0%, #0056d6 100%);
+            border-bottom: 5px solid #0044ab;
+        }
+
+        .social-button span {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<header><a href="index.html" class="logo-link">THEVOIDMC</a></header>
+
+<nav class="radio-input">
+    <a href="index.html" class="nav-item">TRANG CHỦ</a>
+    <a href="huongdan.html" class="nav-item">HƯỚNG DẪN</a>
+    <a href="napthe.html" class="nav-item">NẠP THẺ</a>
+    <a href="congdong.html" class="nav-item active">CỘNG ĐỒNG</a>
+</nav>
+
+<div class="container">
+    <aside class="sidebar">
+        <div class="info-card-blob">
+            <div class="info-card-bg">
+                <h3>KẾT NỐI</h3>
+                <p>Hãy gia nhập các kênh thông tin chính thức của <b>TheVoidMC</b> để không bỏ lỡ sự kiện!</p>
+            </div>
+            <div class="blob"></div>
+        </div>
+    </aside>
+
+    <main class="content-card">
+        <h2>HỆ THỐNG CỘNG ĐỒNG</h2>
+        <p>Chọn nền tảng bạn muốn tham gia để trò chuyện cùng các thành viên khác:</p>
+
+        <div class="social-container">
+            <a href="https://discord.gg/FWHVaT2m" class="social-button discord" target="_blank">
+                <span>🎮 DISCORD SERVER</span>
+            </a>
+
+            <a href="https://zalo.me/g/ibrnpg476" class="social-button zalo" target="_blank">
+                <span>💬 NHÓM ZALO CHÍNH THỨC</span>
+            </a>
+        </div>
+
+        <div style="margin-top: 40px; padding: 20px; background: rgba(160, 32, 240, 0.05); border-radius: 15px; border: 1px dashed #ddd;">
+            <h4 style="margin-top: 0; color: #a020f0;">Quy tắc chung:</h4>
+            <ul style="padding-left: 20px; line-height: 1.6; font-size: 15px;">
+                <li>Tôn trọng các thành viên và Ban Quản Trị.</li>
+                <li>Không quảng cáo các Server khác.</li>
+                <li>Không sử dụng ngôn từ tục tĩu, gây mất đoàn kết.</li>
+            </ul>
+        </div>
+    </main>
+</div>
+</body>
+</html>

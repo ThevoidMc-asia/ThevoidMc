@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-image: url('background/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #fff;
+}
+
+header { text-align: center; padding: 30px 0 10px 0; }
+
+.logo-link {
+    text-decoration: none;
+    color: #a020f0;
+    font-size: clamp(32px, 10vw, 50px);
+    font-weight: 900;
+    text-shadow: 0 0 20px rgba(160, 32, 240, 0.8), 0 0 10px #000;
+    text-transform: uppercase;
+}
+
+.radio-input {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    background: rgba(20, 0, 40, 0.8);
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+    width: fit-content; margin: 10px auto 40px auto;
+    padding: 8px; border: 1px solid rgba(160, 32, 240, 0.3);
+}
+
+.nav-item {
+    padding: 12px 28px; color: #bbb; text-decoration: none;
+    font-weight: 700; border-radius: 40px; transition: 0.3s;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: #fff; background: rgba(160, 32, 240, 0.4);
+    box-shadow: 0 0 15px rgba(160, 32, 240, 0.5);
+}
+
+.container {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; gap: 30px; padding: 0 20px 60px 20px;
+}
+
+.sidebar { flex: 1; min-width: 320px; }
+
+.info-card-blob {
+    position: relative; width: 100%; border-radius: 25px;
+    overflow: hidden; background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(12px); border: 1px solid rgba(160, 32, 240, 0.2);
+}
+
+.info-card-bg { position: relative; z-index: 2; border-radius: 20px; padding: 25px; }
+
+.info-card-bg h3 { color: #a020f0; border-bottom: 2px solid #a020f0; margin-bottom: 15px; }
+
+.ip-box { font-size: 14px; line-height: 1.6; color: #eee; }
+.ip-title { color: #a020f0; font-weight: bold; margin-top: 10px; display: block; }
+
+.blob {
+    position: absolute; z-index: 1; top: 50%; left: 50%;
+    width: 200px; height: 200px; border-radius: 50%;
+    background: radial-gradient(circle, #a020f0 0%, transparent 70%);
+    filter: blur(40px); animation: blob-bounce 8s infinite ease-in-out;
+}
+
+@keyframes blob-bounce {
+    0%, 100% { transform: translate(-100%, -100%); }
+    50% { transform: translate(10%, 10%); }
+}
+
+.content-card {
+    flex: 3; padding: 40px; border-radius: 30px;
+    background: rgba(255, 255, 255, 0.95); color: #111; min-height: 450px;
+}
+
+.content-card h2 { color: #200040; border-bottom: 2px solid #eee; padding-bottom: 15px; }
+
+.qr-image {
+    width: 280px; height: 280px; border: 8px solid #fff;
+    border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 900px) { .container { flex-direction: column; } }
